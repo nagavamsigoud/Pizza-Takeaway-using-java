@@ -1,2 +1,32 @@
 # Pizza-Takeaway-using-java
-🍕 Pizza Bill GeneratorA simple, interactive Java application that allows users to select different types of pizzas (Standard and Deluxe), add customizations like extra cheese or toppings, choose takeaway options, and generate a formatted receipt.🚀 FeaturesMenu Selection: Choose between Veg and Non-Veg pizzas. Deluxe Options: Pre-configured Deluxe pizzas that include extra cheese and toppings by default. Customization: Add extra cheese or extra toppings to standard pizzas. Takeaway Service: Option to add a small service fee for takeaway orders. Automated Billing: Generates a detailed breakdown of the base price, add-ons, and the final total. 🛠 Project StructureThe project is built using Object-Oriented Programming (OOP) principles, specifically Inheritance and Method Overriding.ClassDescriptionMainThe entry point of the application. Handles user input and flow control. PizzaThe base class containing core logic for pricing, add-ons, and billing. DeluxpizzaA subclass of Pizza that overrides add-on methods to handle pre-included items. 💰 Pricing ModelThe application uses the following default pricing structure:Base Pizzas:Veg Pizza: Rs. 300 Non-Veg Pizza: Rs. 400 Deluxe Pizzas:Deluxe Veg: Rs. 550 Deluxe Non-Veg: Rs. 650 Add-ons:Extra Cheese: Rs. 100 Extra Toppings: Rs. 150 Takeaway Fee: Rs. 20 💻 Technical ImplementationClass Hierarchy & InheritanceThe Deluxpizza class extends the Pizza class. It uses the super(veg) constructor to initialize the base pizza type and overrides methods like addExtraCheese() to ensure the pricing reflects the deluxe package. Key LogicUser Input: Uses the java.util.Scanner class to capture user choices and customization preferences (y/n). Conditional Processing: Employs switch statements to navigate the menu and handle specific pizza configurations. Dynamic Billing: The getBill() method calculates the final amount based on boolean flags (e.g., isExtracheeseAdded) set during the ordering process. 📝 Usage ExampleRun the Main class.Select a pizza type from the menu (1-4). Answer the prompts for Extra Cheese, Toppings, or Takeaway by typing y for Yes or n for No. View the generated receipt showing the total amount due. ⚙️ RequirementsJava Development Kit (JDK): 8 or higher.IDE: Eclipse (recommended), IntelliJ IDEA, or VS Code.
+
+**Pizza Bill Generator Application**
+**Description**
+This is a Java-based console application designed to automate the billing process for a pizza shop. It handles different pizza types, including standard and deluxe versions, and calculates costs based on user customizations
+
+**FeaturesPizza Selection: **
+Choose between Veg (Rs.300) and Non-Veg (Rs.400) base pizzas.
+Deluxe Options: Premium Veg (Rs.550) and Non-Veg (Rs.650) pizzas that come with extra cheese and toppings pre-included.
+Custom Add-ons: Options to add extra cheese (Rs.100) or extra toppings (Rs.150) to standard pizzas.
+Takeaway Service: Optional takeaway charge of Rs.20.
+Detailed Billing: Generates a receipt showing the base price, individual add-on costs, and the final total.
+
+**Project StructureMain.java:**
+Contains the entry point and the user interface logic using a Scanner for menu navigation.
+Pizza.java: The base class that handles core pricing logic, add-on selections, and bill generation.
+Deluxpizza.java: A subclass that inherits from Pizza and overrides methods to automatically include deluxe features.
+
+**How to Run**
+Ensure you have the Java Development Kit (JDK) installed on your system.
+Clone this repository to your local machine.
+Compile the Java files:javac bill/*.java
+Run the application:java bill.
+
+**MainUsage Example**
+Select a pizza from the menu (Options 1-4).
+If selecting a standard pizza, type 'y' or 'n' when prompted for extra cheese or toppings.
+Choose whether you want a takeaway ('y'/'n').
+The final bill will be printed to the console.
+
+**Technologies Used Language: **
+Java Concepts: Object-Oriented Programming (Inheritance, Method Overriding, Encapsulation) Tools: Scanner for console input 
